@@ -19,8 +19,6 @@ if(total > 50){
     console.log("Total foi menor que 50")
 }
 
-let nome = 'bonieky'
-
 let ingredientes = [
     '2 xícaras (chá) de açúcar',
     '3 xícaras (chá) de farinha de trigo',
@@ -30,10 +28,13 @@ let ingredientes = [
     '1 colher (sopa) bem cheia de fermento em pó'
 ];
 
-for(let i = 0;i<ingredientes.length;i++){
-    console.log(ingredientes[i])
 
+for(let i=0;i<ingredientes.length;i++){
+    let liHmtl ='<li>' + ingredientes[i] +'</li>';
+
+    document.querySelector('ul').innerHTML += liHmtl;
 }
+
 
 
 
